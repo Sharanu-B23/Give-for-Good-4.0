@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="bg-white p-10 rounded-lg shadow-lg text-center">
+        <h1 class="text-4xl font-bold mb-4">Welcome to Give for Good</h1>
+        <p class="text-lg text-gray-700 mb-6">
+            Your single click can make a huge difference. Join us in our mission to create a better world.
+        </p>
+        <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=1740&auto=format&fit=crop" alt="Charity" class="rounded-lg shadow-md w-full max-w-3xl mx-auto">
+        <a href="{{ url_for('donate') }}" class="mt-8 inline-block bg-blue-600 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-blue-700">
+            Make a Donation
+        </a>
+    </div>
+{% endblock %}
